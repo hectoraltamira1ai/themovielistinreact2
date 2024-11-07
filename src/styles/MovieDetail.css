@@ -1,27 +1,25 @@
 .movie-detail {
-  padding: 20px;
+  padding: 10px; 
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.85em; 
 }
 
 .ratings {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .rating-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
-  padding: 5px;
+  margin-bottom: 3px;
+  padding: 3px;
   background-color: #f9f9f9;
   border-radius: 4px;
 }
 
-.rating-source {
-  font-weight: bold;
-}
-
+.rating-source,
 .rating-value {
-  color: #ff9800; 
+  font-size: 0.8em; 
 }

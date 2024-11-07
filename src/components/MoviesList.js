@@ -99,7 +99,7 @@ const MoviesList = () => {
           <MovieCard key={movie.imdbID} movie={movie} onClick={handleMovieClick} />
         ))}
       </div>
-      <button onClick={handleLoadMore} className="button">Load More</button>
+      <button onClick={handleLoadMore} className="buttonLoadMore">Load More</button>
       {showModal && selectedMovie && <Modal movie={selectedMovie} onClose={() => setShowModal(false)} />}
     </div>
   );
