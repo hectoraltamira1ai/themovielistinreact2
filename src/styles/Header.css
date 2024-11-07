@@ -1,0 +1,69 @@
+/* Header.css */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #121c31;
+  color: white;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 150px;
+}
+
+.button {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #21a1f1;
+}
+
+/* Adjust the main content to account for the fixed header */
+.main-content {
+  padding-top: 30px; /* Adjust based on the new height of the header */
+}
+
+@media (max-width: 320px) {
+  .search-container {
+    margin-right: 80px;
+  }
+  .app-title{
+    align-content: center;
+    margin-left: -60px;
+  }
+}
